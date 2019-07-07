@@ -59,7 +59,7 @@ function ubah($data,$id){
 }
 
 function cari($keyword){
-    $query ="SELECT * FROM mahasiswa where nama LIKE               '$keyword%' OR nrp = '$keyword'";
+    $query ="SELECT * FROM mahasiswa where nama LIKE               '%$keyword%' OR nrp = '$keyword'";
     return query($query);
 }
 
